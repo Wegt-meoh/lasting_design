@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import EccLearning from './pages/TestForDocsifyComponent';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
+import { getAllRoutes } from './route/routes';
 
 function App() {
+  const routes = useRoutes(getAllRoutes())
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index={true} element={<EccLearning />}/>
-      </Routes>
-    </BrowserRouter>
+    <>
+      {routes}
+    </>
   );
 }
 

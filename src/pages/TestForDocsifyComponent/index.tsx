@@ -3,11 +3,7 @@ import { DocsifyContainer } from '../../components/DocsifyComponents'
 import Code from '../../components/DocsifyComponents/Code'
 import { Header } from '../../components/DocsifyComponents/Header'
 
-const data: Array<string> = ['sdf', 'sd', 'ttt', 'ff', 'fff']
-
-type HeaderArrayType = Array<{ id: string, isActive: boolean, offsetTop: number }>
-
-export default function EccLearning() {
+export default function TestForDocsifyComponent() {
 
     return (
         <DocsifyContainer>
